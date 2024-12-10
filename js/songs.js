@@ -536,7 +536,7 @@ window.songs = [
     duration: 255,
     url: "https://open.spotify.com/track/6f7bBfMOHM3rjbRryYQaca?si=5516316b41fb454b",
     explicit: false,
-    imageUrl:"https://pbs.twimg.com/media/FVOjo4KWUAMjLAV.jpg:large?auto=format&fit=crop&w=300&q=80"
+    imageUrl:"https://i.scdn.co/image/ab67616d0000b2730db89c2c686b06173036d796"
   },
   {
     songId: "SID-307",
