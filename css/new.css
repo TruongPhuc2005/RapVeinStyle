@@ -1,55 +1,57 @@
 /* https://github.com/xz/new.css */
 /* https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css */
 
-
 :root {
-	--nc-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	--nc-font-mono: Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace;
+  --nc-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --nc-font-mono: Consolas, monaco, "Ubuntu Mono", "Liberation Mono", "Courier New", Courier,
+    monospace;
 
-	/* Light theme */
-	--nc-tx-1: #000000;
-	--nc-tx-2: #1A1A1A;
-	--nc-bg-1: #FFFFFF;
-	--nc-bg-2: #faf6f6;
-	--nc-bg-3: #e5e7ebdc;
-	--nc-lk-1: #0070F3;
-	--nc-lk-2: #0366D6;
-	--nc-lk-tx: #FFFFFF;
-	--nc-ac-1: #79FFE1;
-	--nc-ac-tx: #0C4047;
+  /* Light theme */
+  --nc-tx-1: #000000;
+  --nc-tx-2: #1a1a1a;
+  --nc-bg-1: #ffffff;
+  --nc-bg-2: #faf6f6;
+  --nc-bg-3: #e5e7ebdc;
+  --nc-lk-1: #0070f3;
+  --nc-lk-2: #0366d6;
+  --nc-lk-tx: #ffffff;
+  --nc-ac-1: #79ffe1;
+  --nc-ac-tx: #0c4047;
 
-	/* Dark theme */
-	--nc-d-tx-1: #ffffff;
-	--nc-d-tx-2: #ffffff;
-	--nc-d-bg-1: #000000;
-	--nc-d-bg-2: #111111;
-	--nc-d-bg-3: #222222;
-	--nc-d-lk-1: #3291FF;
-	--nc-d-lk-2: #0070F3;
-	--nc-d-lk-tx: #FFFFFF;
-	--nc-d-ac-1: #003cff;
-	--nc-d-ac-tx: #FFFFFF;
+  /* Dark theme */
+  --nc-d-tx-1: #ffffff;
+  --nc-d-tx-2: #ffffff;
+  --nc-d-bg-1: #000000;
+  --nc-d-bg-2: #111111;
+  --nc-d-bg-3: #222222;
+  --nc-d-lk-1: #3291ff;
+  --nc-d-lk-2: #0070f3;
+  --nc-d-lk-tx: #ffffff;
+  --nc-d-ac-1: #003cff;
+  --nc-d-ac-tx: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--nc-tx-1: var(--nc-d-tx-1);
-		--nc-tx-2: var(--nc-d-tx-2);
-		--nc-bg-1: var(--nc-d-bg-1);
-		--nc-bg-2: var(--nc-d-bg-1);
-		--nc-bg-3: var(--nc-d-bg-1);
-		--nc-lk-1: var(--nc-d-lk-1);
-		--nc-lk-2: var(--nc-d-lk-2);
-		--nc-lk-tx: var(--nc--dlk-tx);
-		--nc-ac-1: var(--nc-d-ac-1);
-		--nc-ac-tx: var(--nc--dac-tx);
-	}
+  :root {
+    --nc-tx-1: var(--nc-d-tx-1);
+    --nc-tx-2: var(--nc-d-tx-2);
+    --nc-bg-1: var(--nc-d-bg-1);
+    --nc-bg-2: var(--nc-d-bg-1);
+    --nc-bg-3: var(--nc-d-bg-1);
+    --nc-lk-1: var(--nc-d-lk-1);
+    --nc-lk-2: var(--nc-d-lk-2);
+    --nc-lk-tx: var(--nc--dlk-tx);
+    --nc-ac-1: var(--nc-d-ac-1);
+    --nc-ac-tx: var(--nc--dac-tx);
+  }
 }
 
 * {
-	/* Reset margins and padding */
-	margin: 0;
-	padding: 0;
+  /* Reset margins and padding */
+  margin: 0;
+  padding: 0;
 }
 
 address,
@@ -82,121 +84,131 @@ table,
 textarea,
 ul,
 video {
-	/* Margins for most elements */
-	margin-bottom: 1rem;
+  /* Margins for most elements */
+  margin-bottom: 1rem;
 }
 
-html,input,select,button {
-	/* Set body font family and some finicky elements */
-	font-family: var(--nc-font-sans);
+html,
+input,
+select,
+button {
+  /* Set body font family and some finicky elements */
+  font-family: var(--nc-font-sans);
 }
 
 body {
-	/* Center body in page */
-	margin: 0 auto;
-	max-width: 750px;
-	padding: 2rem;
-	border-radius: 6px;
-	overflow-x: hidden;
-	word-break: break-word;
-	overflow-wrap: break-word;
-	background: var(--nc-bg-1);
+  /* Center body in page */
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 2rem;
+  border-radius: 6px;
+  overflow-x: hidden;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  background: var(--nc-bg-1);
 
-	/* Main body text */
-	color: var(--nc-tx-2);
-	font-size: 1.03rem;
-	line-height: 1.5;
+  /* Main body text */
+  color: var(--nc-tx-2);
+  font-size: 1.03rem;
+  line-height: 1.5;
 }
 
 ::selection {
-	/* Set background color for selected text */
-	background: var(--nc-ac-1);
-	color: var(--nc-ac-tx);
+  /* Set background color for selected text */
+  background: var(--nc-ac-1);
+  color: var(--nc-ac-tx);
 }
 
-h1,h2,h3,h4,h5,h6 {
-	line-height: 1;
-	color: var(--nc-tx-1);
-	padding-top: .875rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  color: var(--nc-tx-1);
+  padding-top: 0.875rem;
 }
 
 h1,
 h2,
 h3 {
-	color: var(--nc-tx-1);
-	padding-bottom: 2px;
-	margin-bottom: 8px;
-	border-bottom: 1px solid var(--nc-bg-2);
+  color: var(--nc-tx-1);
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--nc-bg-2);
 }
 
 h4,
 h5,
 h6 {
-	margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
 h1 {
-	font-size: 2.25rem;
+  font-size: 2.25rem;
 }
 
 h2 {
-	font-size: 1.85rem;
+  font-size: 1.85rem;
 }
 
 h3 {
-	font-size: 1.55rem;
+  font-size: 1.55rem;
 }
 
 h4 {
-	font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 h5 {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 h6 {
-	font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 a {
-	color: var(--nc-lk-1);
+  color: #3291ff;
+  text-decoration: none;
 }
 
 a:hover {
-	color: var(--nc-lk-2);
+  color: var(--nc-lk-2);
+  cursor: pointer;
 }
 
 abbr:hover {
-	/* Set the '?' cursor while hovering an abbreviation */
-	cursor: help;
+  /* Set the '?' cursor while hovering an abbreviation */
+  cursor: help;
 }
 
 blockquote {
-	padding: 1.5rem;
-	background: var(--nc-bg-2);
-	border-left: 5px solid var(--nc-bg-3);
+  padding: 1.5rem;
+  background: var(--nc-bg-2);
+  border-left: 5px solid var(--nc-bg-3);
 }
 
 abbr {
-	cursor: help;
+  cursor: help;
 }
 
 blockquote *:last-child {
-	padding-bottom: 0;
-	margin-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 header {
-	background: var(--nc-bg-2);
-	border-bottom: 1px solid var(--nc-bg-3);
-	padding: 2rem 1.5rem;
-	
-	/* This sets the right and left margins to cancel out the body's margins. It's width is still the same, but the background stretches across the page's width. */
+  background: var(--nc-bg-2);
+  border-bottom: 1px solid var(--nc-bg-3);
+  padding: 0.5rem 2rem;
 
-	margin: -2rem calc(50% - 50vw) 2rem;
+  /* This sets the right and left margins to cancel out the body's margins. It's width is still the same, but the background stretches across the page's width. */
 
-	/* Shorthand for:
+  margin: -1rem calc(50% - 50vw) 1rem;
+
+  /* Shorthand for:
 
 	margin-top: -2rem;
 	margin-bottom: 2rem;
@@ -204,24 +216,24 @@ header {
 	margin-left: calc(50% - 50vw);
 	margin-right: calc(50% - 50vw); */
 
-	padding-left: calc(50vw - 50%);
-	padding-right: calc(50vw - 50%);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
 }
 
 header h1,
 header h2,
 header h3 {
-	padding-bottom: 0;
-	border-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 header > *:first-child {
-	margin-top: 0;
-	padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 header > *:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 a button,
@@ -229,19 +241,19 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-	font-size: 1rem;
-	display: inline-block;
-	padding: 6px 12px;
-	text-align: center;
-	text-decoration: none;
-	white-space: nowrap;
-	background: var(--nc-d-bg-1);
-	color: var(--nc-lk-tx);
-	border: 0;
-	border-radius: 4px;
-	box-sizing: border-box;
-	cursor: pointer;
-	color: var(--nc-lk-tx);
+  font-size: 1rem;
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background: var(--nc-d-bg-1);
+  color: var(--nc-lk-tx);
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: var(--nc-lk-tx);
 }
 
 a button[disabled],
@@ -249,11 +261,11 @@ button[disabled],
 input[type="submit"][disabled],
 input[type="reset"][disabled],
 input[type="button"][disabled] {
-	cursor: default;
-	opacity: .5;
+  cursor: default;
+  opacity: 0.5;
 
-	/* Set the [X] cursor while hovering a disabled link */
-	cursor: not-allowed;
+  /* Set the [X] cursor while hovering a disabled link */
+  cursor: not-allowed;
 }
 
 .button:focus,
@@ -266,402 +278,479 @@ input[type="reset"]:focus,
 input[type="reset"]:enabled:hover,
 input[type="button"]:focus,
 input[type="button"]:enabled:hover {
-	background: var(--nc-lk-2);
+  background: var(--nc-lk-2);
 }
 
 a img {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 code,
 pre,
 kbd,
 samp {
-	/* Set the font family for monospaced elements */
-	font-family: var(--nc-font-mono);
+  /* Set the font family for monospaced elements */
+  font-family: var(--nc-font-mono);
 }
 
 code,
 samp,
 kbd,
 pre {
-	/* The main preformatted style. This is changed slightly across different cases. */
-	background: var(--nc-bg-2);
-	border: 1px solid var(--nc-bg-3);
-	border-radius: 4px;
-	padding: 3px 6px;
-	/* ↓ font-size is relative to containing element, so it scales for titles*/
-	font-size: 0.9em;
+  /* The main preformatted style. This is changed slightly across different cases. */
+  background: var(--nc-bg-2);
+  border: 1px solid var(--nc-bg-3);
+  border-radius: 4px;
+  padding: 3px 6px;
+  /* ↓ font-size is relative to containing element, so it scales for titles*/
+  font-size: 0.9em;
 }
 
 kbd {
-	/* Makes the kbd element look like a keyboard key */
-	border-bottom: 3px solid var(--nc-bg-3);
+  /* Makes the kbd element look like a keyboard key */
+  border-bottom: 3px solid var(--nc-bg-3);
 }
 
 pre {
-	padding: 1rem 1.4rem;
-	max-width: 100%;
-	overflow: auto;
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  overflow: auto;
 }
 
 pre code {
-	/* When <code> is in a <pre>, reset it's formatting to blend in */
-	background: inherit;
-	font-size: inherit;
-	color: inherit;
-	border: 0;
-	padding: 0;
-	margin: 0;
+  /* When <code> is in a <pre>, reset it's formatting to blend in */
+  background: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 code pre {
-	/* When <pre> is in a <code>, reset it's formatting to blend in */
-	display: inline;
-	background: inherit;
-	font-size: inherit;
-	color: inherit;
-	border: 0;
-	padding: 0;
-	margin: 0;
+  /* When <pre> is in a <code>, reset it's formatting to blend in */
+  display: inline;
+  background: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 details {
-	/* Make the <details> look more "clickable" */
-	padding: .6rem 1rem;
-	background: var(--nc-bg-2);
-	border: 1px solid var(--nc-bg-3);
-	border-radius: 4px;
+  /* Make the <details> look more "clickable" */
+  padding: 0.6rem 1rem;
+  background: var(--nc-bg-2);
+  border: 1px solid var(--nc-bg-3);
+  border-radius: 4px;
 }
 
 summary {
-	/* Makes the <summary> look more like a "clickable" link with the pointer cursor */
-	cursor: pointer;
-	font-weight: bold;
+  /* Makes the <summary> look more like a "clickable" link with the pointer cursor */
+  cursor: pointer;
+  font-weight: bold;
 }
 
 details[open] {
-	/* Adjust the <details> padding while open */
-	padding-bottom: .75rem;
+  /* Adjust the <details> padding while open */
+  padding-bottom: 0.75rem;
 }
 
 details[open] summary {
-	/* Adjust the <details> padding while open */
-	margin-bottom: 6px;
+  /* Adjust the <details> padding while open */
+  margin-bottom: 6px;
 }
 
-details[open]>*:last-child {
-	/* Resets the bottom margin of the last element in the <details> while <details> is opened. This prevents double margins/paddings. */
-	margin-bottom: 0;
+details[open] > *:last-child {
+  /* Resets the bottom margin of the last element in the <details> while <details> is opened. This prevents double margins/paddings. */
+  margin-bottom: 0;
 }
 
 dt {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 dd::before {
-	/* Add an arrow to data table definitions */
-	content: '→ ';
+  /* Add an arrow to data table definitions */
+  content: "→ ";
 }
 
 hr {
-	/* Reset the border of the <hr> separator, then set a better line */
-	border: 0;
-	border-bottom: 1px solid var(--nc-bg-3);
-	margin: 1rem auto;
+  /* Reset the border of the <hr> separator, then set a better line */
+  border: 0;
+  border-bottom: 1px solid var(--nc-bg-3);
+  margin: 1rem auto;
 }
 
 fieldset {
-	margin-top: 1rem;
-	padding: 2rem;
-	border: 1px solid var(--nc-bg-3);
-	border-radius: 4px;
+  margin-top: 1rem;
+  padding: 2rem;
+  border: 1px solid var(--nc-bg-3);
+  border-radius: 4px;
 }
 
 legend {
-	padding: auto .5rem;
+  padding: auto 0.5rem;
 }
 
 table {
-	/* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
-	border-collapse: collapse;
-	width: 100%
+  /* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
+  border-collapse: collapse;
+  width: 100%;
 }
 
 td,
 th {
-	border: 1px solid var(--nc-bg-3);
-	text-align: left;
-	padding: .5rem;
+  border: 1px solid var(--nc-bg-3);
+  text-align: left;
+  padding: 0.5rem;
 }
 
 th {
-	background: var(--nc-bg-2);
+  background: var(--nc-bg-2);
 }
 
 tr:nth-child(even) {
-	/* Set every other cell slightly darker. Improves readability. */
-	background: var(--nc-bg-2);
+  /* Set every other cell slightly darker. Improves readability. */
+  background: var(--nc-bg-2);
 }
 
 table caption {
-	font-weight: bold;
-	margin-bottom: .5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 textarea {
-	/* Don't let the <textarea> extend off the screen naturally or when dragged by the user */
-	max-width: 100%;
+  /* Don't let the <textarea> extend off the screen naturally or when dragged by the user */
+  max-width: 100%;
 }
 
 ol,
 ul {
-	/* Replace the browser default padding */
-	padding-left: 2rem;
+  /* Replace the browser default padding */
+  padding-left: 2rem;
 }
 
 li {
-	margin-top: .4rem;
+  margin-top: 0.4rem;
 }
 
 ul ul,
 ol ul,
 ul ol,
 ol ol {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 mark {
-	padding: 3px 6px;
-	background: var(--nc-ac-1);
-	color: var(--nc-ac-tx);
+  padding: 3px 6px;
+  background: var(--nc-ac-1);
+  color: var(--nc-ac-tx);
 }
 
 textarea,
 select,
 input {
-	padding: 6px 12px;
-	margin-bottom: .5rem;
-	background: var(--nc-bg-2);
-	color: var(--nc-tx-2);
-	border: 1px solid var(--nc-bg-3);
-	border-radius: 4px;
-	box-shadow: none;
-	box-sizing: border-box;
+  padding: 6px 12px;
+  margin-bottom: 1rem;
+  background: var(--nc-bg-2);
+  color: var(--nc-tx-2);
+  border: 1px solid var(--nc-bg-3);
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
 }
 
 img {
-	max-width: 100%;
-} 
+  max-width: 100%;
+}
 
 /* apply to the RapVein name */
 header h1 {
-	font-family: Georgia, serif;
-	font-size: 5rem;
-    font-weight: bold;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    margin-bottom: 10px;
-    text-shadow: 8px 8px 8px rgba(0, 153, 255, 0.3), 0 0 25px rgba(0, 153, 255, 0.3);
+  font-family: Georgia, serif;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 10px;
+  text-shadow:
+    8px 8px 8px rgba(0, 153, 255, 0.3),
+    0 0 25px rgba(0, 153, 255, 0.3);
 }
 
 /* apply to the slogan */
 header p.slogan {
-	font-family: cursive;
-	font-size: 1.25rem;
-    text-align: center;
-    color: #ffffff;
-    margin-top: 0;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 6px rgba(0, 153, 255, 0.3), 0 0 25px rgba(0, 153, 255, 0.3);
+  font-family: cursive;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 6px rgba(0, 153, 255, 0.3),
+    0 0 25px rgba(0, 153, 255, 0.3);
 }
 
 /* apply to the artist feature */
 #artist-container {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 /* flexbox container holding the artist name and image */
 .artist-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-	
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .artist-info img {
-    width: 150px; 
-    height: 150px; 
-    object-fit: cover; 
-    border-radius: 50%; 
-	
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* adjust the gap between items */
 .artist-info {
-    gap: 0px;  /* no space */
+  gap: 0px; /* no space */
 }
 
 #artistInfo h2 {
-    text-align: center;
-	font-family: ui-monospace;
-    font-size: 2em;
-    margin-bottom: 8px;
-    font-weight: 600;  
+  text-align: center;
+  font-family: ui-monospace;
+  font-size: 2em;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 /* ensure there is no default margin or padding for elements */
-h2, img {
-    margin: 0;
-    padding: 0;
+h2,
+img {
+  margin: 0;
+  padding: 0;
 }
 
 #menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    gap: 10px; 
-    margin: 0; /* reset margin */
-    padding: 0; /* reset padding */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0; /* reset margin */
+  padding: 0; /* reset padding */
 }
 
 /* ensure the artist button also has no space between its content */
 #menu button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: none; /* remove background */
-    border: none; /* remove border */
-    padding: 0; /* remove padding around the button */
-    margin: 0; /* remove margin around the button */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none; /* remove background */
+  border: none; /* remove border */
+  padding: 0; /* remove padding around the button */
+  margin: 0; /* remove margin around the button */
 }
 
 #menu button h2 {
-    margin: 0; /* remove margin */
-    padding: 0; /* remove padding */
+  margin: 0; /* remove margin */
+  padding: 0; /* remove padding */
 }
 
 #menu button img:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s;
-    box-shadow: 0 4px 8px rgb(0, 255, 221);
+  transform: scale(1.1);
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgb(0, 255, 221);
 }
 
 /* apply style for the social links container */
 .social-links {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .social-links a {
-    margin: 0 10px;  
-    display: inline-block;
+  margin: 0 10px;
+  display: inline-block;
 }
 
 .social-links img {
-    width: 30px;   /* adjust icon size */
-    height: 30px;  /* adjust icon size */
-    border-radius: 20px;
-	transform: scale(1.1);
-    transition: transform 0.2s;
-    box-shadow: 0 4px 8px rgb(35, 107, 77);
+  width: 30px; /* adjust icon size */
+  height: 30px; /* adjust icon size */
+  border-radius: 20px;
+  transform: scale(1.1);
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgb(35, 107, 77);
 }
-
-
 
 /* apply Roboto to the general body text */
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.03rem;
-    line-height: 1.5;
-    color: var(--nc-tx-2);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.03rem;
+  line-height: 1.5;
+  color: var(--nc-tx-2);
 }
 
 /*apply for the artist */
 button {
-    font-size: 1rem;
-    padding: 6px 10px;
-    background-color: #000000;
-    border-radius: 50px;
+  font-size: 1rem;
+  padding: 6px 10px;
+  background-color: #000000;
+  border-radius: 50px;
 }
 
 /*style to the song cards*/
 
 .song-card h3 {
-    font-family: 'Roboto', sans-serif;  /* apply Roboto font */
-    font-size: 1.2em;
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-weight: 500;  
+  font-family: "Roboto", sans-serif; /* apply Roboto font */
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
 }
-
 
 /* apply style for song grid container */
 #songsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 8px;
-    margin: 8px 0;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 8px;
+  margin: 8px 0;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .song-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 8px;
-    margin: 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 8px;
+  margin: 8px 0;
 }
-    
+
 .song-card {
-    border: 3px solid #ffd000b0;
-    border-radius: 10px;
-    padding: 16px;
-    margin: 10px;
-    text-align: center;
-    flex: 1 1 calc(25% - 16px); /* 4 cards per row */
-    box-sizing: border-box;
-    cursor: pointer; /* add cursor pointer */
-    transition: transform 0.2s; /* add transition for hover effect */
+  border: 3px solid #ffd000b0;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 10px;
+  text-align: center;
+  flex: 1 1 calc(25% - 16px); /* 4 cards per row */
+  box-sizing: border-box;
+  cursor: pointer; /* add cursor pointer */
+  transition: transform 0.2s; /* add transition for hover effect */
 }
-    
+
 .song-card:hover {
-    transform: scale(1.05); /* scale up on hover */
-	box-shadow: 0 4px 10px rgba(255, 174, 0, 0.3);
+  transform: scale(1.05); /* scale up on hover */
+  box-shadow: 0 4px 10px rgba(255, 174, 0, 0.3);
 }
-    
+
 .song-card h3 {
-    font-size: 1.2em;  
-    margin-top: 0;  
-    margin-bottom: 20px;  
-    font-weight: bold;  
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
-    
+
 .song-card p {
-    margin: 4px 0;
+  margin: 4px 0;
 }
-    
+
 .song-card a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-    
+
 .song-image {
-    width: 150px;   /* adjust the width */
-    height: 150px;  /* adjust the height */
-    object-fit: cover;
-    border-radius: 20px; 
-    margin-bottom: 20px;
+  width: 150px; /* adjust the width */
+  height: 150px; /* adjust the height */
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 
+footer {
+  background-color: #000000;
+  padding-top: 22px;
+  text-align: center;
+}
 
+form#newsletterForm {
+  display: inline-block;
+}
 
+input[type="email"] {
+  padding: 10px;
+  width: 400px;
+}
 
+/* form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background: var(--nc-bg-2);
+  border: 10px solid var(--nc-bg-3);
+  border-radius: 8px;
+}
 
+form label {
+  font-weight: bold;
+}
+
+form input {
+  border-radius: 10px;
+  border-color: #0044ff;
+  font-size: 1rem;
+}
+
+form textarea {
+  border-radius: 10px;
+  width: 100%;
+  border-color: #0044ff;
+}
+
+form button[type="submit"] {
+  padding: 10px 20px;
+  background: var(--nc-lk-1);
+  border-color: #0044ff;
+  border-radius: 100px;
+}
+
+fieldset {
+  padding: 0%;
+}
+
+.artistForm {
+  padding: 0%;
+  gap: 10px;
+}
+
+#nameLabel {
+  padding-right: 35px;
+}
+
+#genreLabel {
+  padding-right: 40px;
+}
+
+#songLabel {
+  padding-right: 47px;
+}
+
+#newsletter {
+  padding-left: 10px;
+}
+
+#requestArtist {
+  padding-left: 10px;
+}
+
+#newsletterForm {
+  padding: 0;
+}
